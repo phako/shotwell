@@ -55,6 +55,10 @@ gexiv2 = dependency('gexiv2', version: '>= 0.10.4')
 libraw = dependency('libraw', version : '>= 0.13.2')
 libexif = dependency('libexif', version : '>= 0.6.16')
 unity = dependency('unity', required : false)
+champlain = dependency('champlain-0.12')
+champlain_gtk = dependency('champlain-gtk-0.12')
+clutter = dependency('clutter-1.0')
+clutter_gtk = dependency('clutter-gtk-1.0')
 
 unity_available = false
 if unity.found() and get_option('enable-unity-support')
